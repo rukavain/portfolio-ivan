@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import IMAGES from "../images/constants";
 import Button from "../components/Button";
 import "aos/dist/aos.css";

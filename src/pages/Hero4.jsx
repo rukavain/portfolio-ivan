@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import "aos/dist/aos.css";
 import AOS from "aos";
-import { useEffect, useState } from "react";
 import Button from "../components/Button";
 
 const Hero2 = () => {
