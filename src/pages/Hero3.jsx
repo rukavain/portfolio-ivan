@@ -1,7 +1,12 @@
 import React from "react";
+import "aos/dist/aos.css";
+import AOS from "aos";
 import IMAGES from "../images/constants";
 
 const Hero3 = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div
       data-aos="fade-left"

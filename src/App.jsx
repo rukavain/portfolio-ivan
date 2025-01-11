@@ -7,6 +7,8 @@ import Hero3 from "./pages/Hero3";
 import Hero4 from "./pages/Hero4";
 import Hero5 from "./pages/Hero5";
 import Hero6 from "./pages/Hero6";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 import Contact from "./pages/Contact";
 
 export default function App() {

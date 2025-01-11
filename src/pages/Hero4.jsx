@@ -1,9 +1,14 @@
 import React from "react";
 import Axios from "axios";
+import "aos/dist/aos.css";
+import AOS from "aos";
 import { useEffect, useState } from "react";
 import Button from "../components/Button";
 
 const Hero2 = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const [name, setName] = useState("");
   const [milestones, setMilestones] = useState(null);
 

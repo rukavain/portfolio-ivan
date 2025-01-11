@@ -1,16 +1,13 @@
 import React from "react";
 import IMAGES from "../images/constants";
 import Button from "../components/Button";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
-/*
-1. E-commerce Website (ReactJS, Tailwind)
-2. Spotify Clone
-3. Expenses Tracker
-4. University Portal Clone
-5. Weather Application
-6. Todo List
-*/
 const Hero6 = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div
       id="#projects"

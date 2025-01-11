@@ -1,11 +1,15 @@
 import React from "react";
 import Axios from "axios";
+import "aos/dist/aos.css";
+import AOS from "aos";
 import { useEffect, useState } from "react";
 import Button from "../components/Button";
 
 const Hero2 = () => {
   const [catFact, setCatFact] = useState("");
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const generateCatFact = () => {
     Axios.get("https://catfact.ninja/fact").then((res) => {
       setCatFact(res.data.fact);

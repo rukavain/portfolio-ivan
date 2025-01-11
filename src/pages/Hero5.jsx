@@ -1,7 +1,12 @@
 import React from "react";
 import IMAGES from "../images/constants";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const Hero5 = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div
       id="#profile"
